@@ -1,0 +1,11 @@
+dist
+playwright-report
+test-results
+package-lock.json
+docs
+CLAUDE.md
+src/components/base
+src/components/application
+src/components/foundations
+src/components/marketing
+src/components/shared-assets

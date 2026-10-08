@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest a tool, framework, tracker, or export format
+labels: [enhancement]
+body:
+    - type: textarea
+      id: problem
+      attributes:
+          label: What problem would this solve?
+          description: Describe the QA task or workflow, not just the feature.
+      validations:
+          required: true
+    - type: textarea
+      id: idea
+      attributes:
+          label: What would you like to see?
+    - type: dropdown
+      id: area
+      attributes:
+          label: Area
+          options: [Bug report writer, Test case generator, Code generation, Exports, AI providers, Dashboard or history, Something new]

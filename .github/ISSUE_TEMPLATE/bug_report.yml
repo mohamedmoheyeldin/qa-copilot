@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in QA Copilot doesn't work as expected
+labels: [bug]
+body:
+    - type: markdown
+      attributes:
+          value: Thanks for reporting! Please don't paste real API keys, customer data, or anything confidential.
+    - type: textarea
+      id: what
+      attributes:
+          label: What happened?
+          description: What did you expect, and what happened instead?
+      validations:
+          required: true
+    - type: textarea
+      id: steps
+      attributes:
+          label: Steps to reproduce
+          placeholder: |
+              1. Open the test case generator
+              2. Choose Selenium, Java, Cucumber BDD
+              3. ...
+      validations:
+          required: true
+    - type: dropdown
+      id: mode
+      attributes:
+          label: AI mode
+          options: [Demo, Your API key, Prompt only]
+      validations:
+          required: true
+    - type: input
+      id: provider
+      attributes:
+          label: Provider and model (if using your own key)
+          placeholder: Anthropic, claude-sonnet-5-5
+    - type: input
+      id: target
+      attributes:
+          label: Framework, language, and BDD setting (if relevant)
+          placeholder: Playwright, Python, BDD on
+    - type: input
+      id: browser
+      attributes:
+          label: Browser and OS
+          placeholder: Chrome 130 on Windows 11

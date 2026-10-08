@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="AI helpers for QA: clean bug reports and test cases with Playwright, Cypress, Selenium, WebdriverIO, and Cucumber BDD code. Free, open source, runs in your browser."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="QA Copilot: AI bug reports and test automation" />
+        <meta
+            property="og:description"
+            content="Bug reports for any tracker, plus test cases and Playwright, Cypress, Selenium, or WebdriverIO code with optional Cucumber BDD. Works with Claude, OpenAI, Gemini, or your approved AI tool."
+        />
+        <meta property="og:url" content="https://mohamedmoheyeldin.github.io/qa-copilot/" />
+        <meta property="og:image" content="https://mohamedmoheyeldin.github.io/qa-copilot/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#7f56d9" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap" rel="stylesheet" />
+
+        <title>QA Copilot: AI bug reports and test automation</title>
+    </head>
+
+    <body class="size-full bg-primary antialiased">
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+        <script>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            var theme = localStorage.getItem("ui-theme") || "light";
+            if (theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.documentElement.classList.add("dark-mode");
+            } else {
+                document.documentElement.classList.remove("dark-mode");
+            }
+        </script>
+    </body>
+</html>
